@@ -19,6 +19,10 @@ export const Button = styled(LinkS)`
 	&:hover {
 		transition: all 0.2s ease-in-out;
 		background: ${({ primary }) => (primary ? "#fff" : "#01bf71")};
+		transform: scale(1.15);
+	}
+	&:active {
+		transform: scale(1);
 	}
 	text-decoration: none;
 `;
@@ -40,6 +44,10 @@ export const ButtonLinks = styled.a`
 	&:hover {
 		transition: all 0.2s ease-in-out;
 		background: ${({ primary }) => (primary ? "#fff" : "#01bf71")};
+		transform: scale(1.15);
+	}
+	&:active {
+		transform: scale(1);
 	}
 	text-decoration: none;
 `;

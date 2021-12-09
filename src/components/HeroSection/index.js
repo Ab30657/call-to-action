@@ -43,7 +43,7 @@ const HeroSection = () => {
 						target="_blank"
 						onClick={redirect}
 					>
-						<b>Open Discord</b> {hover ? <ArrowForward /> : <ArrowRight />}
+						<b>Join us in Discord</b> {hover ? <ArrowForward /> : <ArrowRight />}
 					</ButtonLinks>
 				</HeroBtnWrapper>
 			</HeroContent>

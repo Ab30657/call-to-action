@@ -71,6 +71,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
 	max-width: 560px;
+	white-space: pre-wrap;
 	margin-bottom: 35px;
 	font-size: 18px;
 	line-height: 24px;

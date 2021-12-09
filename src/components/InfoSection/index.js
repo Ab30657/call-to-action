@@ -38,6 +38,9 @@ const InfoSection = ({
 		if (id === "imp") {
 			window.open("https://www.techradar.com/news/how-open-source-communities-work", "_blank");
 		}
+		if (id === "contribute") {
+			window.open("https://github.com/askbuddie", "_blank");
+		}
 	};
 
 	return (
