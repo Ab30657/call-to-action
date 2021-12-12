@@ -46,15 +46,17 @@ const InfoSection = ({
 	return (
 		<>
 			<InfoContainer lightBg={lightBg} id={id}>
-				<InfoWrapper>
+				<InfoWrapper group={id}>
 					<InfoRow imgStart={imgStart}>
 						<Column1>
 							<TextWrapper>
 								<TopLine>{topLine}</TopLine>
 								<Heading lightText={lightText}>{headline}</Heading>
-								<Subtitle darkText={darkText}>{description}</Subtitle>
+								<Subtitle darkText={darkText} group={id}>
+									{description}
+								</Subtitle>
 								<BtnWrap>
-									{id !== "ask" && (
+									{id !== "ask" && id !== "refs" && id !== "discover" && (
 										<Button
 											smooth={true}
 											duration={500}
@@ -73,7 +75,7 @@ const InfoSection = ({
 							</TextWrapper>
 						</Column1>
 						<Column2>
-							<ImgWrap>
+							<ImgWrap group={id}>
 								<Img src={img} alt={alt} />
 							</ImgWrap>
 						</Column2>

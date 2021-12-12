@@ -11,7 +11,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 	display: grid;
 	z-index: 1;
-	height: 860px;
+	height: ${({ group }) => (group === "refs" ? "600px" : "860px")};
 	width: 100%;
 	max-width: 1100px;
 	margin-right: auto;
@@ -73,7 +73,7 @@ export const Subtitle = styled.p`
 	max-width: 560px;
 	white-space: pre-wrap;
 	margin-bottom: 35px;
-	font-size: 18px;
+	font-size: ${({ group }) => (group === "refs" ? "15px" : "18px")};
 	line-height: 24px;
 	color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
@@ -83,7 +83,7 @@ export const BtnWrap = styled.div`
 	justify-content: flex-start;
 `;
 export const ImgWrap = styled.div`
-	max-width: 555px;
+	max-width: ${({ group }) => (group === "refs" ? "400px" : "555px")};
 	height: 100%;
 `;
 export const Img = styled.img`
